@@ -113,7 +113,8 @@ object dino {
 	method position() = position
 	
 	method saltar(){
-		//COMPLETAR
+		self.subir()
+		game.schedule(500, {self.bajar()})	
 	}
 	
 	method subir(){
